@@ -17,15 +17,15 @@ public class Main1 {
 		}
 		
 		public NodeList reverse() {
-			NodeList prevHead = this, head = this;
-			if (prevHead != null) {
+			NodeList head = this;
+			if (this != null) {
 				NodeList node = head.next, aux;
 				while (node != null) {
 					aux = node.next;
 					node.next = head;
 					head = node;
 					node = aux;
-					prevHead.next = aux;
+					this.next = aux;
 				}
 			}
 			return head;
