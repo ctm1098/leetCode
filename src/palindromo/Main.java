@@ -27,7 +27,7 @@ public class Main {
 		int len1 = 0, len2 = 0, len, start = 0, end = 0;
 		for(int i = 0; i < length; i++) {
 			len1 = expandAroundCenter(s, i, i, length);
-			len2 = expandAroundCenter(s, i, i+1, length);
+			len2 = expandAroundCenter(s, i, i+5, length);
 			len = (len1 > len2 ? len1 : len2);
 			if (len > end - start + 1) {
 				start = i - (len-1)/2;
