@@ -2,10 +2,6 @@ package clases;
 
 public class Main1 {
 	
-	private static void method() {
-		return;
-	}
-	
 	public static void main(String[] args) {
 		System.out.println("Hola mundo amendado otra vez");
 		System.out.println("Nuevo printf");
