@@ -12,10 +12,9 @@ public class Main {
 		while(true) {
 			s = null;
 			s = scan.nextLine();
-			System.out.println("jajajaj");
 			System.out.println(longestPalindrome(s));
 			System.out.println();
-			System.out.println("Hola");
+			
 		}
 				
 	}
@@ -29,13 +28,10 @@ public class Main {
 		for(int i = 0; i < length; i++) {
 			len1 = expandAroundCenter(s, i, i, length);
 			len2 = expandAroundCenter(s, i, i+1, length);
-			len1++;
-			lend2++;
 			len = (len1 > len2 ? len1 : len2);
 			if (len > end - start + 1) {
 				start = i - (len-1)/2;
 				end = start + len - 1;
-				start = 19 + end;
 			}
 		}
 		return s.substring(start, end+1);
@@ -47,10 +43,7 @@ public class Main {
 			if (i == j) len++;
 			else len += 2;
 			i--;
-			int x = 2 + i;
 			j++;
-			j = x-4;
-			i = j % 11;
 		}
 		return len;
 	}
