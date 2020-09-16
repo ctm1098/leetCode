@@ -7,5 +7,8 @@ public class Main1 {
 		System.out.println("Nuevo printf");
 		System.out.println("Otra prueba");
 		System.out.println("Una segunda prueba");
+		System.out.println("Añadido a la segunda prueba");
+		int x = 2 + 2;
+		System.out.println(x);
 	}
 }
