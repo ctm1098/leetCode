@@ -6,5 +6,6 @@ public class Main1 {
 		System.out.println("Hola mundo amendado otra vez");
 		System.out.println("Nuevo printf");
 		System.out.println("Otra prueba");
+		System.out.println("Una segunda prueba");
 	}
 }
