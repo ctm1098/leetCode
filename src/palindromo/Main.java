@@ -3,8 +3,6 @@ package palindromo;
 import java.util.Scanner;
 
 public class Main {
-	
-	//Comentario
 
 	public static void main(String[] args) {
 		String s;
