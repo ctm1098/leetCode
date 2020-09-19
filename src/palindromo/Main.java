@@ -3,8 +3,6 @@ package palindromo;
 import java.util.Scanner;
 
 public class Main {
-	
-	
 
 	public static void main(String[] args) {
 		String s;
@@ -14,7 +12,6 @@ public class Main {
 			s = scan.nextLine();
 			System.out.println(longestPalindrome(s));
 			System.out.println();
-			
 		}
 				
 	}
