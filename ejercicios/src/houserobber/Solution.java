@@ -26,7 +26,7 @@ public class Solution {
         int len = nums.length, x = 0, y = 0, z = 0;
         for(int i = len-1; i >= 0; i--) {
             x = Math.max(nums[i]+z,y);
-            //updating the variables
+            //swapping the variables
             z = y;
             y = x;
         }
