@@ -1,21 +1,52 @@
 package jumpgame;
 
-public class Solution {
+class Solution {
     public boolean canJump(int[] nums) {
         int len = nums.length,
             reachable = len-1;
-    
+
         for(int i = len-2; i >= 0; i--) {
             if (nums[i] >= reachable-i)
                 reachable = i;
         }
-    
+
         return reachable == 0;
-    }
+    }   
+    
 }
 
 /*
-    public boolean canJump(int[] nums) {
+public boolean canJump(int[] nums) {
+
+ * Brute force
+ * 
+ * n = size of nums
+ * m = max value of nums
+ * Time O(m^n)
+ * Space O(n)
+ * 
+ * public boolean canJump(int[] nums) {
+        Map<Integer, Boolean> map = new HashMap<>();
+        return canJumpAux(nums, 0);
+    }
+ * 
+ * boolean canJumpAux(int[] nums, int idx) {
+ *      if (idx >= nums.length) return false;
+ *      if (idx == nums.length - 1) return true;
+ *      
+ *      for(int i = nums[idx]; i > 0; i--)
+ *          if (canJumpAux(nums,idx+i)) return true;
+ * 
+ *      return false;
+ * }
+ * 
+ * 
+ * Memoization
+ * 
+ * Time O(mn)
+ * Space O(n)
+ * 
+ * public boolean canJump(int[] nums) {
         Map<Integer, Boolean> map = new HashMap<>();
         return canJumpAux(nums, 0, map);
     }
@@ -34,5 +65,7 @@ public class Solution {
         map.put(idx,false);
         return false;
     }
-
-*/
+ * 
+ * 
+ * 
+ */
